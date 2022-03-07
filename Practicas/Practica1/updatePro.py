@@ -15,7 +15,7 @@ for x in range(300):
     valor = "N:" + str(total_input_traffic) + ':' + str(total_output_traffic)
     print (valor)
     rrdtool.update('protocolo.rrd', valor)
-    rrdtool.dump('protocolo.rrd','traficoRED.xml')
+    rrdtool.dump('protocolo.rrd','protocolo.xml')
     time.sleep(1)
 
 if ret:
