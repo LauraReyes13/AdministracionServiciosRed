@@ -15,7 +15,7 @@ for x in range(300):
     valor = "N:" + str(total_input_traffic) + ':' + str(total_output_traffic)
     print (valor)
     rrdtool.update('icmp.rrd', valor)
-    rrdtool.dump('icmp.rrd','traficoRED.xml')
+    rrdtool.dump('icmp.rrd','icmp.xml')
     time.sleep(1)
 
 if ret:
